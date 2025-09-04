@@ -1,13 +1,8 @@
-import random
-r = random.randint(0,100)
-for i in range(1,100):
-    a = int(input("Введите число: "))
-    if a > r:
-        print("Введенное число слишком большое")
-        continue
-    elif a < r:
-        print("Введенное число слишком маленькое")
-        continue
-    else:
-        print("Победа!!!")
-        break
+a = int(input())
+f1 = 0
+f2 = 1
+for _ in range(a):
+    temp = f2  # запомним старый f2
+    f2 = f1 + f2  # новый f2 = сумма
+    f1 = temp  # новый f1 = старый f2
+print(f1)
