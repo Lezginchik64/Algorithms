@@ -1,3 +1,2 @@
-r, c, p = int(input()), int(input()), int(input())
-p1 = (r * 100 + c) * p
-print(p1 // 100, p1 % 100)
+a, b, c = int(input()), int(input()), int(input())
+print(a // 2 + a % 2  + b // 2 + b % 2 + c // 2 + c % 2) # Чтобы округлить в большую сторону, нужно просто прибавить к полученному числу остаток
