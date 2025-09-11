@@ -1,2 +1,6 @@
-a, b, c = int(input()), int(input()), int(input())
-print(a // 2 + a % 2  + b // 2 + b % 2 + c // 2 + c % 2) # Чтобы округлить в большую сторону, нужно просто прибавить к полученному числу остаток
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+if (a + b) % 2 == (c + d) % 2:
+    print("YES")
+else:
+    print("NO")
+
