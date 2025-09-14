@@ -1,6 +1,3 @@
-n, m, k = int(input()), int(input()), int(input())
-s = n * m
-if (k % n == 0 or k % m == 0) and k < s:
-    print("YES")
-else:
-    print("NO")
+x = int(input())
+res = x % 10
+print(res)       # x = 1923, x % 10 -> 3, x % 100 -> 23, x % 1000 -> 923
