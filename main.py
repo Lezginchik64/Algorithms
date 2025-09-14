@@ -1,3 +1,5 @@
 x = int(input())
-res = x % 10
-print(res)       # x = 1923, x % 10 -> 3, x % 100 -> 23, x % 1000 -> 923
+a = x % 10
+b = (x // 10) % 10
+c = x // 100
+print(a + b + c)
