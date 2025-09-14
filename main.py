@@ -1,5 +1,5 @@
-from math import sqrt
+from math import pi
 
-a = float(input())
-b = float(input())
-print(round(sqrt((a * a) + (b * b)), 6))
+a, r = float(input()), float(input())
+pi = round(pi, 2)
+print(round((a ** 2) - pi * (r ** 2), 6))
