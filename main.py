@@ -1,5 +1,4 @@
-from math import pi
+v = int(input())
+t = int(input())
 
-a, r = float(input()), float(input())
-pi = round(pi, 2)
-print(round((a ** 2) - pi * (r ** 2), 6))
+print(v * t % 109)
