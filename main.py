@@ -1,4 +1,5 @@
-from math import ceil
-n, m = int(input()), int(input())
-print(ceil(n/m))
+from math import sqrt
 
+a = float(input())
+b = float(input())
+print(round(sqrt((a * a) + (b * b)), 6))
