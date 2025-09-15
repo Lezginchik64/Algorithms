@@ -1,3 +1,6 @@
-t = int(input())
+d = int(input())
+a = int(input())
 n = int(input())
-print(n * 2 ** t)
+an = a + (n - 1) * d
+res = (a + an) * n // 2
+print(res)
