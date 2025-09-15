@@ -1,6 +1,7 @@
-d = int(input())
-a = int(input())
-n = int(input())
-an = a + (n - 1) * d
-res = (a + an) * n // 2
-print(res)
+H = int(input())
+M = int(input())
+S = int(input())
+sec = H * 3600 + M * 60 + S     # общее количество секунд
+print(sec / 120)                # 360 градусов = 3600 (секунд в одном часе) * 12 (один полный оборот часовой стрелки)
+                                # 1 градус = 120 секунд
+
