@@ -1,9 +1,16 @@
-x = int(input())
-y = int(input())
-c = 1
-while x < y:
-    d = x * 0.1
-    x += d
-    c += 1
-    print(x)
-print(c)
+# 1 Вариант (не совсем корректный, но рабочий)
+count = 0
+while True:
+    n = int(input())
+    if n == 0:
+        break
+    count += 1
+print(count)
+
+# 2 Вариант
+count = 0
+a = int(input())
+while a != 0:
+    count += 1
+    a = int(input())
+print(count)
