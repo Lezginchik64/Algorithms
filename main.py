@@ -1,7 +1,7 @@
-sum = count = 0
+max = 0
 a = int(input())
 while a != 0:
-    count += 1
-    sum += a
+    if a > max:
+        max = a
     a = int(input())
-print(sum / count)
+print(max)
