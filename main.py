@@ -1,7 +1,7 @@
-count = 0
-a = int(input())
-while a != 0:
-    if a % 2 == 0:
-        count += 1
-    a = int(input())
-print(count)
+s = 0
+n = int(input())
+while n != 0:
+    ost = n % 10        # Пример: 123 % 10 = 3;  s = 3;  123 // 10 = 12
+    s += ost                    # 12 % 10 = 2;  s = 3 + 2;  12 // 10 = 1    и т.д
+    n = n // 10
+print(s)
