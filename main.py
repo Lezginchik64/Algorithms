@@ -1,7 +1,10 @@
-s = 0
-n = int(input())
-while n != 0:
-    ost = n % 10        # Пример: 123 % 10 = 3;  s = 3;  123 // 10 = 12
-    s += ost                    # 12 % 10 = 2;  s = 3 + 2;  12 // 10 = 1    и т.д
-    n = n // 10
-print(s)
+prev = int(input())
+cur = int(input())
+count = 0
+
+while cur != 0:
+    if cur > prev:
+        count += 1
+    prev = cur
+    cur = int(input())
+print(count)
