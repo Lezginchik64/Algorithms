@@ -1,10 +1,10 @@
-a = int(input())
-f1, f2 = 0, 1
-i = 1
-while f2 < a:                 # Цикл работает до числа Фибоначчи
-    f1, f2 = f2, f1 + f2
-    i += 1
-if a == f2:
-    print(i)
-else:
-    print(-1)
+s = str(input())
+print(s[2])
+print(s[-2])
+print(s[0:5])
+print(s[:-2])
+print(s[::2])
+print(s[1::2])
+print(s[::-1])
+print(s[-1::-2])
+print(len(s))
