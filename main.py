@@ -1,14 +1,11 @@
-# Вариант 1
+# Option 1
 s = input()
-ind = (len(s) + 1) // 2
-part1 = s[:ind]
-part2 = s[ind:]
-print(part2 + part1)
+ind = s.find(' ')
+word1 = s[:ind]
+word2 = s[ind + 1:]
+print(word2, word1)
 
-# Вариант 2
+# Option 2
 s = input()
-mid = len(s) // 2
-if len(s) % 2 != 0:
-    print(s[mid+1:] + s[:mid+1])
-else:
-    print(s[mid:] + s[:mid])
+if s.count(" ") >= 1:
+    print(s[s.find(" ") + 1:] + " " + s[0:s.find(" ")])
