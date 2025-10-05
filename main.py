@@ -1,8 +1,9 @@
 s = input()
-first, second = s.find("h"), s.rfind("h")
-part1 = s[:first + 1]
-part2 = s[second:]
-middle = s[first+1:second].replace("h", "H")
-print(part1 + middle + part2)
+res = ""
+for i in range(len(s)):
+    if i % 3 != 0:
+        res += s[i]       # Складываем в res буквы, у которых индекс не делится на 3
+print(res)
+
 
 
