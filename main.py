@@ -1,7 +1,9 @@
-s = input()
-if s.islower():         # islower - проверяет все ли буквы маленькие
-    print(s.upper())
-else:
-    print(s.lower())
+n = int(input())
+print(n * '   _~_    ')
+print(n * '  (o o)   ')
+print(n * ' /  V  \\  ')
+print(n * '/(  _  )\\ ')
+print(n * '  ^^ ^^   ')
+
 
 
