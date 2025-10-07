@@ -1,17 +1,6 @@
-# Генераторы - выражения, позволяющие заполнить список некоторой формулой.
+#Option 1
+print(*input().split()[::2])
 
-# Пример 1
-n = 5
-a = [i ** 2 for i in range(n)]
-
-# Пример 2
-from random import randrange
-n = 10
-a = [randrange(1, 10) for i in range(n)]
-
-# Пример 3
-a = [input() for i in range(int(input()))]
-
-# Пример 4
-a = [i for i in range(5) if i % 2 == 0]
-print(*a) # 0 2 4
+#Option 2
+a = input().split()
+print(*[a[i] for i in range(len(a)) if i % 2 == 0])
