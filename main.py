@@ -1,9 +1,11 @@
-m1 = m2 = 0
-a = int(input())
-while a != 0:
-    if a > m1:
-        m1, m2 = a, m1
-    elif a > m2:
-        m2 = a
-    a = int(input())
-print(m2)
+#Option 1
+a = input().split()
+for i in range(1, len(a)):    # Начинаем от 1, чтобы не было такого a[0] > a[-1]
+    if a[i] > a[i - 1]:
+        print(a[i], end=' ')
+
+#Option 2
+a = [int(x) for x in input().split()]
+for i in range(1, len(a)):
+    if a[i] > a[i - 1]:
+        print(a[i], end = ' ')
