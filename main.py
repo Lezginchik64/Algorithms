@@ -1,4 +1,5 @@
-a = input().split()
-for i in range(0, len(a) - 1, 2):
-    a[i], a[i + 1] = a[i + 1], a[i]
+a = [int(x) for x in input().split()]
+idx_min = a.index(min(a))           # Индекс макс или мин используем тогда,когда нужно менять элементы местами
+idx_max = a.index(max(a))
+a[idx_min], a[idx_max] = a[idx_max], a[idx_min]
 print(*a)
