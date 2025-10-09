@@ -1,6 +1,4 @@
-a = [int(x) for x in input().split()]
-count = 1
-for i in range(1, len(a)):
-    if a[i] != a[i - 1]:
-        count += 1
-print(count)
+a = input().split()
+for i in range(0, len(a) - 1, 2):
+    a[i], a[i + 1] = a[i + 1], a[i]
+print(*a)
