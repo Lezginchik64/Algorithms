@@ -1,8 +1,7 @@
-def factorial(n):
-    res = 1
+def dividers(n):
+    d = []
     for i in range(1, n + 1):
-        res *= i
-    return res
-
-
-print(factorial(int(input())))
+        if n % i == 0:
+            d.append(i)
+    return d
+print(*dividers(int(input())))
