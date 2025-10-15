@@ -1,7 +1,9 @@
-def dividers(n):
-    d = []
-    for i in range(1, n + 1):
+def isprime(n):
+    for i in range(2, n):
         if n % i == 0:
-            d.append(i)
-    return d
-print(*dividers(int(input())))
+            return False
+    return True
+
+
+n = int(input())
+print(isprime(n))
