@@ -1,7 +1,6 @@
-def even_or_odd(n):
-    if n % 2 == 0:
-        return "even"
-    else:
-        return "odd"
-
-print(even_or_odd(int(input())))
+def greet(name):
+    print(f'Hello, {name}!')
+N = int(input())
+names = [input() for _ in range(N)]
+for name in names:
+    greet(name)
