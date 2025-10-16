@@ -1,24 +1,10 @@
-# Вариант 1
-def arithmetic_progression(a, d, n):
-    an = a + (n - 1) * d
-    sn = n * (a + an) // 2
-    return sn
-
-a, d, n = [int(x) for x in input().split()]
-print(arithmetic_progression(a, d, n))
-
-# Вариант 2
-def arithmetic_progression2(a, d, n):
-    return (2 * a + (n - 1) * d) * n // 2
-
-a, d, n = [int(x) for x in input().split()]
-print(arithmetic_progression2(a, d, n))
-
-# Вариант 3
-def arithmetic_progression3(a, d, n):
-    total = 0
-    for i in range(n):
-        total += a + i * d
-    return total
-a, d, n = [int(x) for x in input().split()]
-print(arithmetic_progression3(a, d, n))
+def median(nums):
+    nums = sorted(nums)
+    n = len(nums)
+    if n % 2 != 0:
+        return nums[n // 2]
+    else:
+        return int(round((nums[n // 2] + nums[n // 2 - 1]) / 2, 0))
+# длина списка делится пополам, затем этот элемент складывается с предыдущим элементом и делится на 2, в конце округляется
+nums = [int(x) for x in input().split()]
+print(median(nums))
