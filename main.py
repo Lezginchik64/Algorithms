@@ -1,7 +1,18 @@
-def check(s):
-    for i in range(len(s) - 1):
-        if s[i] == s[i + 1]:
-            return False
-    return True
+# Вариант 1
+def power(a, n):
+    c = 1
+    for _ in range(n):
+        c *= a
+    return round(c, 3)
 
-print(check(input()))
+a = float(input())
+n = int(input())
+print(power(a, n))
+
+# Вариант 2
+def power(a, n):
+    return a**n
+
+a = float(input())
+n = int(input())
+print(power(a, n))
