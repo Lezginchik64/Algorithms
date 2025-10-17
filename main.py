@@ -1,18 +1,12 @@
 # Вариант 1
-def power(a, n):
-    c = 1
-    for _ in range(n):
-        c *= a
-    return round(c, 3)
-
-a = float(input())
-n = int(input())
-print(power(a, n))
+def world_sorting(s):
+    s.sort()
+    return s
+s = input().split()
+print(*world_sorting(s))
 
 # Вариант 2
-def power(a, n):
-    return a**n
+def word_sorting(s):
+    return ' '.join(sorted(s.split()))
 
-a = float(input())
-n = int(input())
-print(power(a, n))
+print(word_sorting(input()))
